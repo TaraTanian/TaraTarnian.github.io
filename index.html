@@ -1,122 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tara Tarnian | Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Helvetica Neue', sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            padding: 2rem;
-            text-align: center;
-            background: white;
-        }
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1rem;
-        }
-        h1 {
-            font-size: 2rem;
-            margin: 0.5rem 0;
-        }
-        p.description {
-            max-width: 600px;
-            margin: 0.5rem auto;
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        nav a {
-            text-decoration: none;
-            color: #555;
-            font-weight: 500;
-        }
-        main {
-            padding: 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-        .project {
-            background: white;
-            border-radius: 8px;
-            padding: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            transition: 0.3s;
-            cursor: pointer;
-            text-align: center;
-        }
-        .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-            color: #777;
-        }
-        .socials a {
-            margin: 0 0.5rem;
-            color: #555;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tara Tarnian | Graphic & UI/UX Designer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <img src="photo-placeholder.jpg" alt="Tara Tarnian Photo" id="profile-photo">
-    <h1>Tara Tarnian</h1>
-    <p class="description">Graphic Designer & UI/UX Designer passionate about visual identity, motion design, and crafting eye-catching advertisements and strategies.</p>
+  <header>
     <nav>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+      <h1>Tara Tarnian</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<main id="projects">
-    <div class="project" onclick="location.href='project1.html';">
-        <h2>Project Title 1</h2>
-        <p>Short description.</p>
-    </div>
-    <div class="project" onclick="location.href='project2.html';">
-        <h2>Project Title 2</h2>
-        <p>Short description.</p>
-    </div>
-    <div class="project" onclick="location.href='project3.html';">
-        <h2>Project Title 3</h2>
-        <p>Short description.</p>
-    </div>
-    <div class="project" onclick="location.href='project4.html';">
-        <h2>Project Title 4</h2>
-        <p>Short description.</p>
-    </div>
-    <div class="project" onclick="location.href='project5.html';">
-        <h2>Project Title 5</h2>
-        <p>Short description.</p>
-    </div>
-</main>
+  <main>
+    <section id="hero">
+      <!-- Placeholder for Photo -->
+      <div class="photo-placeholder">Photo will go here</div>
+      <h2>Minimalist & Artsy Graphic Designer</h2>
+    </section>
 
-<footer id="contact">
-    <p>Contact me: <a href="mailto:taratarnian@gmail.com">taratarnian@gmail.com</a></p>
-    <div class="socials">
-        <a href="https://www.linkedin.com/in/tara-tarnian" target="_blank">LinkedIn</a>
-    </div>
-</footer>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a graphic and UI/UX designer with almost 3 years of experience as a freelance designer, working on various visual identity, poster, and motion projects.  
+        I am passionate about advertising, motion design, standing out visually, marketing, and creating eye-catching advertisements and strategies.
+        Skilled in Photoshop, Illustrator, Figma, After Effects, InDesign, and a bit of Premiere.
+      </p>
+    </section>
 
+    <section id="work">
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+        <!-- Each project will later link to a separate project page -->
+        <a href="project1.html" class="project-card">Project 1</a>
+        <a href="project2.html" class="project-card">Project 2</a>
+        <a href="project3.html" class="project-card">Project 3</a>
+        <a href="project4.html" class="project-card">Project 4</a>
+        <a href="project5.html" class="project-card">Project 5</a>
+        <!-- Optional 6th project -->
+        <a href="project6.html" class="project-card">Project 6</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:taratarnian@gmail.com">taratarnian@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/tara-tarnian" target="_blank">www.linkedin.com/in/tara-tarnian</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Tara Tarnian. All rights reserved.</p>
+  </footer>
 </body>
 </html>
